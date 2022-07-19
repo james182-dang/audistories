@@ -1,24 +1,20 @@
 import { Link } from 'react-router-dom';
-import NavbarOption from '../NavbarOption';
-import ReplayIcon from '@mui/icons-material/Replay';
+import './style.css'
 
 function Navbar(props) {
     return (
-        <div className='navbar'>
+        <header className='flex-wrap'>
             <h1>
-                <a href='#home' onClick={() => props.setCurrentDisplay('Home')}>AudiStories</a>
+                <a href='#home' onClick={() =>props.setCurrentDisplay('Home')}>AudiStories</a>
             </h1>
-            <nav>
-                <ul>
+            <nav className='d-flex flex-wrap'>
+                <ul className='d-flex justify-content-between mb-0'>
                     <li>
                         <a href='#reviews' onClick={() => props.setCurrentDisplay('Reviews')}>Reviews</a>
                     </li>
-                    <li>
-                        <a href='#other' onClick={() => props.setCurrentDisplay('Other')}>Other</a>
-                    </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     );
 }
 

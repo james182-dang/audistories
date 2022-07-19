@@ -1,4 +1,4 @@
-.navbar {
+header {
     background-color: #36454F;
     color: #fff;
     width: 100%;
@@ -6,3 +6,36 @@
     display: flex;
     justify-content: space-between;
 }
+
+header h1 {
+    padding-left: 2.5rem;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    margin: auto 2rem;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    padding: 0 1rem;
+    display: inline;
+    text-decoration: none;
+}
+header nav ul li a {
+    font-size: 1rem;
+    color: #e9e8e8;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    transition: color 0.5s;
+    color: #FFD700; 
+}
+header nav ul li a:focus {
+    color: #FFD700; 
+}    
