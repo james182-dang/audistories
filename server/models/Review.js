@@ -20,8 +20,8 @@ const reviewSchema = new Schema(
             required: true
         },
         albumName: {
-            type: String,
-            required: true
+            type: Schema.Types.ObjectId,
+            ref: 'Album'
         },
         comments: [commentSchema]
     },

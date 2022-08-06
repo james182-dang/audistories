@@ -22,6 +22,9 @@ const resolvers = {
               .populate('reviews');
         },
 
+        review: async (parent, { _id }) => {
+            return Review.findOne({ _id });
+        },
     },
 
     Mutation: {

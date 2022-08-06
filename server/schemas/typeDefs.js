@@ -34,6 +34,7 @@ const typeDefs = gql`
         comments: [Comment]
         commentCount: Int
         albumName: String
+        score: Int
     }
 
     type Comment {
@@ -46,6 +47,7 @@ const typeDefs = gql`
     type Query {
         me: User
         user(username: String!): User
+        review(_id: ID!): Review
     }
 
     type Mutation {
